@@ -2,7 +2,7 @@
 
 function slider_post_types( $post_types ) {
 
-	$post_types['slider'] = array(
+	$post_types['smallis-slider'] = array(
 		'labels' => piklist( 'post_type_labels', 'Slide' ),
 		'title' => __( 'Add Slide'),
 		'menu_icon' => 'dashicons-slides',
