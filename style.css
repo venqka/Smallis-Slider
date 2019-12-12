@@ -1,2 +1,64 @@
 /*** Smallis Slider Styles **/
 
+.smallis-slide {
+	height: 300px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.slick-prev::before, .slick-next::before {
+	font-size: 30px !important;
+}
+
+.slick-prev {
+	left: 25px !important;
+	z-index: 5;
+}
+
+.slick-next {
+	right: 25px !important;
+}
+
+.smallis-slider-overlay {
+	background-color: rgba(77,97,103,0.4);
+	height: 100%;
+	width: 100%;
+	color: #FFF;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	padding: 0px 10%;
+}
+
+.smallis-slide-title h3 {
+	color: #fff;
+	margin: 0px;
+}
+
+.smallis-slide-content * {
+	color: #fff;
+}
+
+.smallis-slide-button-container a {
+	text-decoration: none;
+}
+
+.smallis-slide-button {
+	display: inline-block;
+	background-color: #d8e2dc;
+	padding: 10px 20px;
+	color: #4f6367;
+	font-weight: bold;
+	border: 1px solid #d8e2dc;
+}
+
+.smallis-slide-button:hover {
+	background: transparent;
+	color: #d8e2dc;
+}
