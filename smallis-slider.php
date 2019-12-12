@@ -12,3 +12,18 @@
  * Text Domain:       smallis
  * Domain Path:       /languages
  */
+
+function smallis_slider_enqueue() {
+
+	if( is_front_page() ) {
+		//enqueue slider styles
+		wp_enqueue_style( 'smallis-slider-styles', plugin_dir_url( __FILE__ ) . '/style.css', array(), '1.0', false );
+
+		//Enqueue slider scripts
+		wp_register_script( 'smallis-slider-scripts', plugin_dir_url( __FILE__ ) . '/scripts.js', array('jquery'), '1.0', false );
+
+		wp_enqueue_script( 'smallis-slider-scripts', plugin_dir_url( __FILE__ ) . '/scripts.js', array('jquery'), '1.0', false );
+	}
+
+}
+add_action( 'wp_enqueue_scripts', 'smallis_slider_enqueue' );
