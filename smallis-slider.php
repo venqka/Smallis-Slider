@@ -27,3 +27,5 @@ function smallis_slider_enqueue() {
 
 }
 add_action( 'wp_enqueue_scripts', 'smallis_slider_enqueue' );
+
+include( 'slider-post-type.php' );
